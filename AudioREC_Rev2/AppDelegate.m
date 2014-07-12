@@ -12,12 +12,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
+    [self CopyOfDataBaseIfNeeded];
+    [self.window addSubview:[pRootViewController view]];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+- (BOOL)CopyOfDataBaseIfNeeded
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory = [paths objectAtIndex:0];
+    NSString *myPath = [documentDirectory stringByAppendingPathComponent:@"RecordDB.sqlite"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL exist = [fileManager fileExistsAtPath:myPath];
+    if (exist)
+    {
+        NSLog(@"DB가 존재합니다.");
+        return TRUE;
+    }
+    NSString *defaultDBPath = [[[NSBundle mainBundle]resourcePath]stringByAppendingPathComponent:@"RecordDB.sqlite"];
+    return [fileManager copyItemAtPath:defaultDBPath toPath:myPath error:nil];
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

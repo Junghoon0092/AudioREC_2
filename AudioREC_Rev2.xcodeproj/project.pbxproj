@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B701EEB196EBA9E0035DB09 /* UIMemoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B701EEA196EBA9E0035DB09 /* UIMemoListCell.xib */; };
+		3B89F763196D77AC00AC914E /* RecordDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B89F762196D77AC00AC914E /* RecordDataBase.m */; };
+		BD4A13CD19682B1800BA17B3 /* gauge.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4A13CA19682B1800BA17B3 /* gauge.png */; };
+		BD4A13CE19682B1800BA17B3 /* record_off.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4A13CB19682B1800BA17B3 /* record_off.png */; };
+		BD4A13CF19682B1800BA17B3 /* record_on.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4A13CC19682B1800BA17B3 /* record_on.png */; };
 		BD8CBE3919643A7700978FA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CBE3819643A7700978FA0 /* Foundation.framework */; };
 		BD8CBE3B19643A7700978FA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CBE3A19643A7700978FA0 /* CoreGraphics.framework */; };
 		BD8CBE3D19643A7700978FA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CBE3C19643A7700978FA0 /* UIKit.framework */; };
@@ -19,6 +24,16 @@
 		BD8CBE5419643A7700978FA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8CBE3C19643A7700978FA0 /* UIKit.framework */; };
 		BD8CBE5C19643A7700978FA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD8CBE5A19643A7700978FA0 /* InfoPlist.strings */; };
 		BD8CBE5E19643A7700978FA0 /* AudioREC_Rev2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CBE5D19643A7700978FA0 /* AudioREC_Rev2Tests.m */; };
+		BD8CBE6819643A9800978FA0 /* MainWindows.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8CBE6719643A9800978FA0 /* MainWindows.xib */; };
+		BD8CBE6B19643B5900978FA0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CBE6A19643B5900978FA0 /* RootViewController.m */; };
+		BD8CBE6F1965911000978FA0 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CBE6D1965911000978FA0 /* RecordViewController.m */; };
+		BD8CBE701965911000978FA0 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8CBE6E1965911000978FA0 /* RecordViewController.xib */; };
+		BD8CBE741965912E00978FA0 /* RecordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CBE721965912E00978FA0 /* RecordListViewController.m */; };
+		BD8CBE751965912E00978FA0 /* RecordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8CBE731965912E00978FA0 /* RecordListViewController.xib */; };
+		BD8CBE781965914E00978FA0 /* MeterGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CBE771965914E00978FA0 /* MeterGaugeView.m */; };
+		BD8CBE7C1965918200978FA0 /* UIMemoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CBE7A1965918200978FA0 /* UIMemoListCell.m */; };
+		BD8CBE861965947C00978FA0 /* AudioRecorderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8CBE841965947C00978FA0 /* AudioRecorderInfo.m */; };
+		BD8CBE871965947C00978FA0 /* AudioRecorderInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8CBE851965947C00978FA0 /* AudioRecorderInfo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B62B16919701E8600AACF54 /* RecordDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = RecordDB.sqlite; path = ../RecordDB.sqlite; sourceTree = "<group>"; };
+		3B701EEA196EBA9E0035DB09 /* UIMemoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIMemoListCell.xib; sourceTree = "<group>"; };
+		3B89F761196D77AC00AC914E /* RecordDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordDataBase.h; sourceTree = "<group>"; };
+		3B89F762196D77AC00AC914E /* RecordDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordDataBase.m; sourceTree = "<group>"; };
+		BD4A13CA19682B1800BA17B3 /* gauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gauge.png; sourceTree = "<group>"; };
+		BD4A13CB19682B1800BA17B3 /* record_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_off.png; sourceTree = "<group>"; };
+		BD4A13CC19682B1800BA17B3 /* record_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_on.png; sourceTree = "<group>"; };
 		BD8CBE3519643A7700978FA0 /* AudioREC_Rev2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioREC_Rev2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8CBE3819643A7700978FA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BD8CBE3A19643A7700978FA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +70,22 @@
 		BD8CBE5919643A7700978FA0 /* AudioREC_Rev2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioREC_Rev2Tests-Info.plist"; sourceTree = "<group>"; };
 		BD8CBE5B19643A7700978FA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BD8CBE5D19643A7700978FA0 /* AudioREC_Rev2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioREC_Rev2Tests.m; sourceTree = "<group>"; };
+		BD8CBE6719643A9800978FA0 /* MainWindows.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindows.xib; sourceTree = "<group>"; };
+		BD8CBE6919643B5900978FA0 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BD8CBE6A19643B5900978FA0 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		BD8CBE6C1965911000978FA0 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		BD8CBE6D1965911000978FA0 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		BD8CBE6E1965911000978FA0 /* RecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordViewController.xib; sourceTree = "<group>"; };
+		BD8CBE711965912E00978FA0 /* RecordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordListViewController.h; sourceTree = "<group>"; };
+		BD8CBE721965912E00978FA0 /* RecordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListViewController.m; sourceTree = "<group>"; };
+		BD8CBE731965912E00978FA0 /* RecordListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordListViewController.xib; sourceTree = "<group>"; };
+		BD8CBE761965914E00978FA0 /* MeterGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterGaugeView.h; sourceTree = "<group>"; };
+		BD8CBE771965914E00978FA0 /* MeterGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterGaugeView.m; sourceTree = "<group>"; };
+		BD8CBE791965918200978FA0 /* UIMemoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMemoListCell.h; sourceTree = "<group>"; };
+		BD8CBE7A1965918200978FA0 /* UIMemoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMemoListCell.m; sourceTree = "<group>"; };
+		BD8CBE831965947C00978FA0 /* AudioRecorderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecorderInfo.h; sourceTree = "<group>"; };
+		BD8CBE841965947C00978FA0 /* AudioRecorderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecorderInfo.m; sourceTree = "<group>"; };
+		BD8CBE851965947C00978FA0 /* AudioRecorderInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioRecorderInfo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +115,9 @@
 		BD8CBE2C19643A7700978FA0 = {
 			isa = PBXGroup;
 			children = (
+				BD4A13CA19682B1800BA17B3 /* gauge.png */,
+				BD4A13CB19682B1800BA17B3 /* record_off.png */,
+				BD4A13CC19682B1800BA17B3 /* record_on.png */,
 				BD8CBE3E19643A7700978FA0 /* AudioREC_Rev2 */,
 				BD8CBE5719643A7700978FA0 /* AudioREC_Rev2Tests */,
 				BD8CBE3719643A7700978FA0 /* Frameworks */,
@@ -107,10 +148,30 @@
 		BD8CBE3E19643A7700978FA0 /* AudioREC_Rev2 */ = {
 			isa = PBXGroup;
 			children = (
+				3B62B16919701E8600AACF54 /* RecordDB.sqlite */,
 				BD8CBE4719643A7700978FA0 /* AppDelegate.h */,
 				BD8CBE4819643A7700978FA0 /* AppDelegate.m */,
 				BD8CBE4A19643A7700978FA0 /* Images.xcassets */,
 				BD8CBE3F19643A7700978FA0 /* Supporting Files */,
+				BD8CBE6719643A9800978FA0 /* MainWindows.xib */,
+				BD8CBE6919643B5900978FA0 /* RootViewController.h */,
+				BD8CBE6A19643B5900978FA0 /* RootViewController.m */,
+				BD8CBE6C1965911000978FA0 /* RecordViewController.h */,
+				BD8CBE6D1965911000978FA0 /* RecordViewController.m */,
+				BD8CBE6E1965911000978FA0 /* RecordViewController.xib */,
+				BD8CBE711965912E00978FA0 /* RecordListViewController.h */,
+				BD8CBE721965912E00978FA0 /* RecordListViewController.m */,
+				BD8CBE731965912E00978FA0 /* RecordListViewController.xib */,
+				BD8CBE761965914E00978FA0 /* MeterGaugeView.h */,
+				BD8CBE771965914E00978FA0 /* MeterGaugeView.m */,
+				BD8CBE791965918200978FA0 /* UIMemoListCell.h */,
+				BD8CBE7A1965918200978FA0 /* UIMemoListCell.m */,
+				3B701EEA196EBA9E0035DB09 /* UIMemoListCell.xib */,
+				BD8CBE831965947C00978FA0 /* AudioRecorderInfo.h */,
+				BD8CBE841965947C00978FA0 /* AudioRecorderInfo.m */,
+				BD8CBE851965947C00978FA0 /* AudioRecorderInfo.xib */,
+				3B89F761196D77AC00AC914E /* RecordDataBase.h */,
+				3B89F762196D77AC00AC914E /* RecordDataBase.m */,
 			);
 			path = AudioREC_Rev2;
 			sourceTree = "<group>";
@@ -220,7 +281,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD8CBE4319643A7700978FA0 /* InfoPlist.strings in Resources */,
+				BD8CBE6819643A9800978FA0 /* MainWindows.xib in Resources */,
 				BD8CBE4B19643A7700978FA0 /* Images.xcassets in Resources */,
+				BD8CBE701965911000978FA0 /* RecordViewController.xib in Resources */,
+				BD4A13CF19682B1800BA17B3 /* record_on.png in Resources */,
+				3B701EEB196EBA9E0035DB09 /* UIMemoListCell.xib in Resources */,
+				BD4A13CD19682B1800BA17B3 /* gauge.png in Resources */,
+				BD4A13CE19682B1800BA17B3 /* record_off.png in Resources */,
+				BD8CBE751965912E00978FA0 /* RecordListViewController.xib in Resources */,
+				BD8CBE871965947C00978FA0 /* AudioRecorderInfo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +310,13 @@
 			files = (
 				BD8CBE4919643A7700978FA0 /* AppDelegate.m in Sources */,
 				BD8CBE4519643A7700978FA0 /* main.m in Sources */,
+				BD8CBE861965947C00978FA0 /* AudioRecorderInfo.m in Sources */,
+				3B89F763196D77AC00AC914E /* RecordDataBase.m in Sources */,
+				BD8CBE781965914E00978FA0 /* MeterGaugeView.m in Sources */,
+				BD8CBE6B19643B5900978FA0 /* RootViewController.m in Sources */,
+				BD8CBE7C1965918200978FA0 /* UIMemoListCell.m in Sources */,
+				BD8CBE6F1965911000978FA0 /* RecordViewController.m in Sources */,
+				BD8CBE741965912E00978FA0 /* RecordListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +513,7 @@
 				BD8CBE6319643A7700978FA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD8CBE6419643A7700978FA0 /* Build configuration list for PBXNativeTarget "AudioREC_Rev2Tests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +522,7 @@
 				BD8CBE6619643A7700978FA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
