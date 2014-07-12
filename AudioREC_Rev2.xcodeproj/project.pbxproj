@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B62B16B1970B8D400AACF54 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B62B16A1970B8D400AACF54 /* libsqlite3.dylib */; };
 		3B701EEB196EBA9E0035DB09 /* UIMemoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B701EEA196EBA9E0035DB09 /* UIMemoListCell.xib */; };
 		3B89F763196D77AC00AC914E /* RecordDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B89F762196D77AC00AC914E /* RecordDataBase.m */; };
 		BD4A13CD19682B1800BA17B3 /* gauge.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4A13CA19682B1800BA17B3 /* gauge.png */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		3B62B16919701E8600AACF54 /* RecordDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = RecordDB.sqlite; path = ../RecordDB.sqlite; sourceTree = "<group>"; };
+		3B62B16A1970B8D400AACF54 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		3B701EEA196EBA9E0035DB09 /* UIMemoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIMemoListCell.xib; sourceTree = "<group>"; };
 		3B89F761196D77AC00AC914E /* RecordDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordDataBase.h; sourceTree = "<group>"; };
 		3B89F762196D77AC00AC914E /* RecordDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordDataBase.m; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B62B16B1970B8D400AACF54 /* libsqlite3.dylib in Frameworks */,
 				BD8CBE3B19643A7700978FA0 /* CoreGraphics.framework in Frameworks */,
 				BD8CBE3D19643A7700978FA0 /* UIKit.framework in Frameworks */,
 				BD8CBE3919643A7700978FA0 /* Foundation.framework in Frameworks */,
@@ -137,6 +140,7 @@
 		BD8CBE3719643A7700978FA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B62B16A1970B8D400AACF54 /* libsqlite3.dylib */,
 				BD8CBE3819643A7700978FA0 /* Foundation.framework */,
 				BD8CBE3A19643A7700978FA0 /* CoreGraphics.framework */,
 				BD8CBE3C19643A7700978FA0 /* UIKit.framework */,

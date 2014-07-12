@@ -16,6 +16,7 @@
     [self CopyOfDataBaseIfNeeded];
     [self.window addSubview:[pRootViewController view]];
     [self.window makeKeyAndVisible];
+    self.window.backgroundColor=[UIColor purpleColor];
     return YES;
 }
 

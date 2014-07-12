@@ -34,7 +34,7 @@
     RecordViewController *viewController = [[RecordViewController alloc] initWithNibName:@"RecordViewController" bundle:Nil];
     self.pRecordViewController = viewController;
 
-    [self.view insertSubview:viewController belowSubview:infoButton];
+    [self.view insertSubview:viewController.view belowSubview:infoButton];
 //    [viewController release];
 //
     [super viewDidLoad];
@@ -74,12 +74,12 @@
 {
     if (pRecordViewController == nil) {
         RecordListViewController *viewController =[[RecordListViewController alloc]initWithNibName:@"RecordListViewController" bundle:nil];
-        self.pRecordViewController = viewController;
+        self.pRecordListViewController = viewController;
 //        [viewController release];
         
     }
     UIView *RecordView = pRecordViewController.view;
-    UIView *RecordListView = pRecordListViewController;
+    UIView *RecordListView = pRecordListViewController.view;
     
     
     [UIView beginAnimations:nil context:NULL];
@@ -101,13 +101,6 @@
     }
     [UIView commitAnimations];
 }
-
-
-
-
-
-
-
 
 
 

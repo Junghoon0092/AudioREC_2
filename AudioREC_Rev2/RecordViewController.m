@@ -14,6 +14,12 @@
 
 @implementation RecordViewController
 
+@synthesize pAudioRecorder;
+@synthesize pAudioSession;
+
+
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -40,7 +46,7 @@
         return NO;
     if (![self.pAudioSession setActive:YES error:nil])
         return NO;
-    return  self.pAudioSession.inputIsAvailable;
+    return  self.pAudioSession.isInputAvailable;
 }
 
 - (IBAction)AudioRecordingClick
