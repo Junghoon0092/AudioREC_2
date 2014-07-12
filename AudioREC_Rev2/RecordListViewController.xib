@@ -24,7 +24,11 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
                         <barButtonItem width="253" style="plain" systemItem="fixedSpace" id="Ccw-eD-r1V"/>
-                        <barButtonItem title="녹음" id="dPL-Ah-TIi"/>
+                        <barButtonItem title="녹음" id="dPL-Ah-TIi">
+                            <connections>
+                                <action selector="AudioListClick" destination="-2" id="K9F-uk-HQS"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZxY-Rh-pi4">

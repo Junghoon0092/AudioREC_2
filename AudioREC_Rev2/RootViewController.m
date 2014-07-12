@@ -60,7 +60,8 @@
     if ([RecordView superview]!=nil)
     {
         [RecordView removeFromSuperview];
-        [self.view insertSubview:AudioRecorderInfoView belowSubview:infoButton];
+       [self.view insertSubview:AudioRecorderInfoView belowSubview:infoButton];
+      //  [self.view addSubview:AudioRecorderInfoView];
     } else
     {
         [AudioRecorderInfoView removeFromSuperview];
