@@ -6,7 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <customObject id="bDL-wF-cbg" customClass="AppDelegate"/>
+        <customObject id="bDL-wF-cbg" customClass="AppDelegate">
+            <connections>
+                <outlet property="pRootViewController" destination="6Ns-IR-fdr" id="fhJ-Mx-qHF"/>
+            </connections>
+        </customObject>
         <viewController id="6Ns-IR-fdr" customClass="RootViewController">
             <layoutGuides>
                 <viewControllerLayoutGuide type="top" id="EKz-x5-ovy"/>
@@ -17,11 +21,14 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-Wu-K7j">
-                        <rect key="frame" x="278" y="438" width="22" height="22"/>
+                        <rect key="frame" x="278" y="406" width="22" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="RecodrInfoClick" destination="-2" eventType="touchUpInside" id="ger-4l-vBx"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" red="1" green="0.93625708059368173" blue="0.80775680694254381" alpha="1" colorSpace="calibratedRGB"/>
@@ -31,6 +38,19 @@
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="infoButton" destination="TUn-Wu-K7j" id="jON-b4-S51"/>
+            </connections>
         </viewController>
+        <window opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DCu-xi-AP6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="rootViewController" destination="6Ns-IR-fdr" id="ZuV-Rb-n52"/>
+            </connections>
+        </window>
     </objects>
 </document>
