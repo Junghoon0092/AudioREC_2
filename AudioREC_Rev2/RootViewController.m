@@ -45,7 +45,7 @@
 -(IBAction)RecodrInfoClick
 {
     if (pAudioRecorderInfo == Nil) {
-        AudioRecorderInfo *viewController = [[AudioRecorderInfo alloc] initWithNibName:@"AudioRecorderInfor" bundle:nil];
+        AudioRecorderInfo *viewController = [[AudioRecorderInfo alloc] initWithNibName:@"AudioRecorderInfo" bundle:nil];
         self.pAudioRecorderInfo = viewController;
 //        [viewController release];
     }
@@ -60,7 +60,7 @@
     if ([RecordView superview]!=nil)
     {
         [RecordView removeFromSuperview];
-        [self.view addSubview:AudioRecorderInfoView];
+        [self.view insertSubview:AudioRecorderInfoView belowSubview:infoButton];
     } else
     {
         [AudioRecorderInfoView removeFromSuperview];

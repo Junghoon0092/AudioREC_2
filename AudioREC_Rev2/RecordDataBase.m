@@ -12,7 +12,7 @@
 @synthesize memoListArray;
 
 
-- (void)pDataBaseConnection:(sqlite3 **)tempDataBase
+- (void)DataBaseConnection:(sqlite3 **)tempDataBase
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [paths objectAtIndex:0];
@@ -78,7 +78,7 @@
 {
     sqlite3_stmt *statement = nil;
     sqlite3 *pDataBase;
-    [self pDataBaseConnection:&pDataBase];
+    [self DataBaseConnection:&pDataBase];
     if(pDataBase == nil)
     {
         NSLog(@"Erro Message : '%s'",sqlite3_errmsg(pDataBase));
