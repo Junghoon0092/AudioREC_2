@@ -15,9 +15,9 @@
 
 @interface RootViewController : UIViewController
 {
-    RecordViewController         *pRecordViewController;
-    AudioRecorderInfo           *pAudioRecorderInfo;
-    RecordListViewController    *pRecoedlistViewController;
+//    RecordViewController         *pRecordViewController;
+//    AudioRecorderInfo           *pAudioRecorderInfo;
+//    RecordListViewController    *pRecordListViewController;
     IBOutlet UIButton           *infoButton;
 }
 

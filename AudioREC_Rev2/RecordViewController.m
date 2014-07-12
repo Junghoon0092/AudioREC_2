@@ -57,12 +57,13 @@
         {
             [self.pAudioRecorder stop];
             pGaugeView.value = 0;
-            [[NSFileManager defaultManager] removeItemAtPath:[self.pAudioRecorder.url path] error:nil];
+            
             [pGaugeView setNeedsDisplay];
             return;
             
         }
-//        [self.pAudioRecorder release];
+        [[NSFileManager defaultManager] removeItemAtPath:[self.pAudioRecorder.url path] error:nil];
+        //        [self.pAudioRecorder release];
     }
     if ([self AudioRecordingStart])
     {
@@ -108,9 +109,9 @@
 - (NSString *) getFileName
 {
     NSDateFormatter *FileNameFormat = [[NSDateFormatter alloc] init];
-    [FileNameFormat setDateFormat:@"yyyymmddhhmmss"];
+    [FileNameFormat setDateFormat:@"yyyyMMddHHmmss"];
     
-    NSString *FileNameStr = [[FileNameFormat stringFromDate:[NSData data]]stringByAppendingString:@".aif"];
+    NSString *FileNameStr = [[FileNameFormat stringFromDate:[NSDate date]]stringByAppendingString:@".aif"];
 //    [FileNameFormat release];
     return  FileNameStr;
     

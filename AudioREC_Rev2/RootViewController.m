@@ -14,10 +14,10 @@
 
 
 @implementation RootViewController
-
-@synthesize pRecordListViewController;
-@synthesize pAudioRecorderInfo;
-@synthesize pRecordViewController;
+//
+//@synthesize pRecordListViewController;
+//@synthesize pAudioRecorderInfo;
+//@synthesize pRecordViewController;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,13 +44,13 @@
 
 -(IBAction)RecodrInfoClick
 {
-    if (pAudioRecorderInfo == Nil) {
+    if (self.pAudioRecorderInfo == Nil) {
         AudioRecorderInfo *viewController = [[AudioRecorderInfo alloc] initWithNibName:@"AudioRecorderInfo" bundle:nil];
         self.pAudioRecorderInfo = viewController;
 //        [viewController release];
     }
-    UIView *RecordView = pRecordViewController.view;
-    UIView *AudioRecorderInfoView = pAudioRecorderInfo.view;
+    UIView *RecordView = self.pRecordViewController.view;
+    UIView *AudioRecorderInfoView = self.pAudioRecorderInfo.view;
     
     
     [UIView beginAnimations:nil context:NULL];
@@ -73,14 +73,14 @@
 
 -(IBAction)AudioListClick
 {
-    if (pRecordViewController == nil) {
+    if (self.pRecordListViewController == nil) {
         RecordListViewController *viewController =[[RecordListViewController alloc]initWithNibName:@"RecordListViewController" bundle:nil];
         self.pRecordListViewController = viewController;
 //        [viewController release];
         
     }
-    UIView *RecordView = pRecordViewController.view;
-    UIView *RecordListView = pRecordListViewController.view;
+    UIView *RecordView = self.pRecordViewController.view;
+    UIView *RecordListView = self.pRecordListViewController.view;
     
     
     [UIView beginAnimations:nil context:NULL];
